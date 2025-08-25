@@ -1,0 +1,25 @@
+GPX Simplify Optimizer 部署包
+===============================
+
+构建时间: Mon Aug 25 21:24:32 CST 2025
+版本: 未知
+提交: 78f67f4
+
+部署说明:
+1. 将 deploy 目录下的所有文件复制到 nginx 的静态资源目录
+2. 确保 nginx 配置支持静态文件服务
+3. 访问 index.html 即可使用应用
+
+文件结构:
+- dist/          - 构建后的 JavaScript 和 CSS 文件
+- images/        - 应用图片资源
+- locales/       - 国际化语言文件
+- vendor/        - 本地化的第三方库文件
+- index.html     - 主页面文件
+
+注意事项:
+- 这是一个纯静态应用，不需要后端服务
+- 支持 GPX、KML、GeoJSON 文件格式
+- 需要现代浏览器支持
+- Bootstrap 等大部分文件已本地化，Leaflet 使用 CDN
+- 需要网络连接以加载 Leaflet 地图库
